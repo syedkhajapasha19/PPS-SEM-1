@@ -43,31 +43,28 @@ Explanation: 2 does not exist in nums so return -1
 
 **Language:** C  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 10 MB (beats 50.25%)  
-**Submitted:** 2026-11-20T05:16:17.558Z  
+**Memory:** 9.9 MB (beats 48.68%)  
+**Submitted:** 2026-11-21T05:08:19.517Z  
 
 ```c
-  int search(int* nums, int numsSize, int target) {
+int search(int* nums, int numsSize, int target) {
     int left = 0;
     int right = numsSize - 1;
 
     while (left <= right) {
-        // Prevents potential integer overflow compared to (left + right) / 2
         int mid = left + (right - left) / 2;
 
         if (nums[mid] == target) {
-            return mid; // Target found, return its index
+            return mid;
         } else if (nums[mid] < target) {
-            left = mid + 1; // Search the right half
+            left = mid + 1;
         } else {
-            right = mid - 1; // Search the left half
+            right = mid - 1;
         }
     }
 
-    return -1; // Target does not exist in the array
-}  
-    
-
+    return -1;
+}
 ```
 
 ---
