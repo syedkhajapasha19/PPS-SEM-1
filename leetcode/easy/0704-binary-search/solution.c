@@ -1,20 +1,18 @@
-  int search(int* nums, int numsSize, int target) {
+int search(int* nums, int numsSize, int target) {
     int left = 0;
     int right = numsSize - 1;
 
     while (left <= right) {
-        // Prevents potential integer overflow compared to (left + right) / 2
         int mid = left + (right - left) / 2;
 
         if (nums[mid] == target) {
-            return mid; // Target found, return its index
+            return mid;
         } else if (nums[mid] < target) {
-            left = mid + 1; // Search the right half
+            left = mid + 1;
         } else {
-            right = mid - 1; // Search the left half
+            right = mid - 1;
         }
     }
 
-    return -1; // Target does not exist in the array
-}  
-    
+    return -1;
+}
