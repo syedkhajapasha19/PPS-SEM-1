@@ -15,24 +15,24 @@ C
  **Example 1:** 
 
 ```
-Input:int nums[] = {1, 2, 3, 4};
-int numsSize = 4;Output: [1,3,6,10]
+Input: nums = [1,2,3,4]
+Output: [1,3,6,10]
 Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 ```
 
  **Example 2:** 
 
 ```
-Input:int nums[] = {1, 1, 1, 1, 1};
-int numsSize = 5;Output: [1,2,3,4,5]
+Input: nums = [1,1,1,1,1]
+Output: [1,2,3,4,5]
 Explanation: Running sum is obtained as follows: [1, 1+1, 1+1+1, 1+1+1+1, 1+1+1+1+1].
 ```
 
  **Example 3:** 
 
 ```
-Input:int nums[] = {3, 1, 2, 10, 1};
-int numsSize = 5;Output: [3,4,6,16,17]
+Input: nums = [3,1,2,10,1]
+Output: [3,4,6,16,17]
 
 ```
 
@@ -47,11 +47,10 @@ int numsSize = 5;Output: [3,4,6,16,17]
 
 **Language:** C  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 11.9 MB (beats 45.53%)  
-**Submitted:** 2026-11-20T05:02:28.011Z  
+**Memory:** 12 MB (beats 17.29%)  
+**Submitted:** 2026-11-24T11:00:56.941Z  
 
 ```c
-
 int* runningSum(int* nums, int numsSize, int* returnSize) 
 {
     *returnSize=numsSize;
@@ -61,6 +60,7 @@ int* runningSum(int* nums, int numsSize, int* returnSize)
     }
     return nums;
 }
+
 ```
 
 ---
