@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 
 int** matrixReshape(int** mat, int matSize, int* matColSize, int r, int c,
                     int* returnSize, int** returnColumnSizes) {
