@@ -46,13 +46,14 @@ Output: [[1,2],[3,4]]
 
 **Language:** C  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 15.6 MB (beats 97.31%)  
-**Submitted:** 2026-11-24T10:44:49.349Z  
+**Memory:** 15.6 MB (beats 87.61%)  
+**Submitted:** 2026-11-24T10:47:34.019Z  
 
 ```c
 #include <stdlib.h>
 
-int** matrixReshape(int** mat, int matSize, int* matColSize, int r, int c, int* returnSize, int** returnColumnSizes) {
+int** matrixReshape(int** mat, int matSize, int* matColSize, int r, int c,
+                    int* returnSize, int** returnColumnSizes) {
     int m = matSize;
     int n = matColSize[0];
 
