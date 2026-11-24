@@ -1,6 +1,7 @@
 #include <stdlib.h>
 
-int** matrixReshape(int** mat, int matSize, int* matColSize, int r, int c, int* returnSize, int** returnColumnSizes) {
+int** matrixReshape(int** mat, int matSize, int* matColSize, int r, int c,
+                    int* returnSize, int** returnColumnSizes) {
     int m = matSize;
     int n = matColSize[0];
 
