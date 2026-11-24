@@ -45,9 +45,9 @@ Output: [[1,2],[3,4]]
 ## Solution
 
 **Language:** C  
-**Runtime:** 1 ms (beats 18.51%)  
-**Memory:** 16 MB (beats 17.01%)  
-**Submitted:** 2026-11-24T10:44:32.765Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 15.6 MB (beats 97.31%)  
+**Submitted:** 2026-11-24T10:44:49.349Z  
 
 ```c
 #include <stdlib.h>
