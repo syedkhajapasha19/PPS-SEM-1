@@ -42,8 +42,8 @@ Output: [[1,4],[2,5],[3,6]]
 
 **Language:** C  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 16 MB (beats 14.81%)  
-**Submitted:** 2026-11-24T10:38:42.572Z  
+**Memory:** 15.8 MB (beats 90.16%)  
+**Submitted:** 2026-11-24T10:39:27.516Z  
 
 ```c
 #include <stdlib.h>
